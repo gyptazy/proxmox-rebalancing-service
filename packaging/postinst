@@ -1,0 +1,5 @@
+#!/bin/bash
+useradd -m prs 
+chown prs:prs /etc/proxmox-rebalancing-service/prs.conf
+chmod 600 /etc/proxmox-rebalancing-service/prs.conf
+systemctl daemon-reload
