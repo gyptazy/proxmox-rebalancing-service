@@ -1,0 +1,6 @@
+[Unit]
+Description=Proxmox Rebalancing Service
+
+[Service]
+ExecStart=/usr/bin/proxmox-rebalancing-service -c /etc/proxmox-rebalancing-service/prs.conf
+User=prs
